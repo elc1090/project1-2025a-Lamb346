@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minha Loja - Estilo Amazon</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="classes.css" />
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <style></style>
+    <style>
+      .fade-bottom {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .fade-bottom::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%; /* Controla até onde o fade começa */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+        pointer-events: none;
+      }
+    </style>
   </head>
   <body class="bg-gray-100">
     <!-- Header -->
@@ -69,41 +86,33 @@
         <div class="swiper-wrapper">
           <!-- Slide 1 com 4 categorias -->
           <div class="swiper-slide grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="bg-white p-4 rounded-lg overflow-hidden shadow hover:shadow-lg cursor-pointer">
+            <div class="bg-white p-16 rounded-lg overflow-hidden shadow hover:shadow-lg">
               <img src="Img/ImgCatEletro.jpg" alt="Eletrônicos" class="w-full h-40 object-cover rounded-md" />
-              <h3 class="text-lg font-semibold mt-2">Eletrônicos</h3>
+              <h3 class="text-center text-lg font-semibold mt-8">Eletrônicos</h3>
             </div>
-            <div class="bg-white p-4 rounded-lg overflow-hidden shadow hover:shadow-lg cursor-pointer">
+            <div class="bg-white p-16 rounded-lg overflow-hidden shadow hover:shadow-lg">
               <img src="Img/ImgCatLivro.jpg" alt="Livros" class="w-full h-40 object-cover rounded-md" />
-              <h3 class="text-lg font-semibold mt-2">Livros</h3>
+              <h3 class="text-center text-lg font-semibold mt-8">Livros</h3>
             </div>
-            <div class="bg-white p-4 rounded-lg overflow-hidden shadow hover:shadow-lg cursor-pointer">
+            <div class="bg-white p-16 rounded-lg overflow-hidden shadow hover:shadow-lg">
               <img src="Img/ImgCatModa.jpg" alt="Moda" class="w-full h-40 object-cover rounded-md" />
-              <h3 class="text-lg font-semibold mt-2">Moda</h3>
+              <h3 class="text-center text-lg font-semibold mt-8">Moda</h3>
             </div>
-            <div class="bg-white p-4 rounded-lg overflow-hidden shadow hover:shadow-lg cursor-pointer">
+            <div class="bg-white p-16 rounded-lg overflow-hidden shadow hover:shadow-lg">
               <img src="Img/ImgCatCasa.jpg" alt="Casa" class="w-full h-40 object-cover rounded-md" />
-              <h3 class="text-lg font-semibold mt-2">Casa</h3>
+              <h3 class="text-center text-lg font-semibold mt-8">Casa</h3>
             </div>
           </div>
 
           <!-- Slide 2 com outras 4 categorias -->
           <div class="swiper-slide grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="bg-white p-4 rounded-lg overflow-hidden shadow hover:shadow-lg cursor-pointer">
+            <div class="bg-white p-16 rounded-lg overflow-hidden shadow hover:shadow-lg">
               <img src="Img/ImgCatCozinha.jpg" alt="Cozinha" class="w-full h-40 object-cover rounded-md" />
               <h3 class="text-lg font-semibold mt-2">Casa e Cozinha</h3>
             </div>
-            <div class="bg-white p-4 rounded-lg overflow-hidden shadow hover:shadow-lg cursor-pointer">
+            <div class="bg-white p-16 rounded-lg overflow-hidden shadow hover:shadow-lg">
               <img src="Img/ImgCatEsportes.jpg" alt="Esportes" class="w-full h-40 object-cover rounded-md" />
               <h3 class="text-lg font-semibold mt-2">Esportes</h3>
-            </div>
-            <div class="bg-white p-4 rounded-lg overflow-hidden shadow hover:shadow-lg cursor-pointer">
-              <img src="Img/ImgCatGames.jpg" alt="Games" class="w-full h-40 object-cover rounded-md" />
-              <h3 class="text-lg font-semibold mt-2">Games</h3>
-            </div>
-            <div class="bg-white p-4 rounded-lg overflow-hidden shadow hover:shadow-lg cursor-pointer">
-              <img src="Img/ImgCatBeleza.jpg" alt="Beleza" class="w-full h-40 object-cover rounded-md" />
-              <h3 class="text-lg font-semibold mt-2">Beleza</h3>
             </div>
           </div>
 
@@ -123,28 +132,28 @@
     <section class="container mx-auto mt-6">
       <h2 class="text-2xl font-bold mb-4">Produtos em Destaque</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">
+        <div class="stBlocoProd shadow hover:shadow-lg">
           <img src="Img/ImgSmartphoneXiome.jpg" alt="Produto 1" class="w-full h-40 object-cover rounded-md" />
           <h3 class="text-lg font-semibold mt-2">Smartphone Xiaomi Poco C75 NFC Black (Preto) [2410FPCC5G]</h3>
           <p class="text-gray-600">8GB RAM 256GB ROM</p>
           <p class="text-yellow-500 font-bold text-xl mt-2">R$ 885,00</p>
           <button class="mt-3 bg-yellow-500 text-black p-2 rounded w-full">Adicionar ao Carrinho</button>
         </div>
-        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">
+        <div class="stBlocoProd shadow hover:shadow-lg">
           <img src="Img/ImgNoteBook.jpg" alt="Produto 2" class="w-full h-40 object-cover rounded-md" />
           <h3 class="text-lg font-semibold mt-2">Notebook Ultra Intel (Prata) [UB432]</h3>
           <p class="text-gray-600">Core i3 4GB 1TB HDD com Linux</p>
           <p class="text-yellow-500 font-bold text-xl mt-2">R$ 1.819,90</p>
           <button class="mt-3 bg-yellow-500 text-black p-2 rounded w-full">Adicionar ao Carrinho</button>
         </div>
-        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">
+        <div class="stBlocoProd shadow hover:shadow-lg">
           <img src="Img/ImgPhone.jpg" alt="Produto 3" class="w-full h-40 object-cover rounded-md" />
           <h3 class="text-lg font-semibold mt-2">Headphone Philips bluetooth (Preto) [TAH1108BK/55]</h3>
           <p class="text-gray-600">On-ear, com microfone e Bateria 15h</p>
           <p class="text-yellow-500 font-bold text-xl mt-2">R$104,96</p>
           <button class="mt-3 bg-yellow-500 text-black p-2 rounded w-full">Adicionar ao Carrinho</button>
         </div>
-        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">
+        <div class="stBlocoProd shadow hover:shadow-lg">
           <img src="Img/ImgSmartTV.jpg" alt="Produto 4" class="w-full h-40 object-cover rounded-md" />
           <h3 class="text-lg font-semibold mt-2">Samsung Smart TV 70" UHD 4K (Crystal) [70DU8000]</h3>
           <p class="text-gray-600">Painel Dynamic, Gaming Hub</p>
@@ -174,6 +183,14 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+      });
+      new Swiper(".swiper-banner", {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
         },
       });
     });
