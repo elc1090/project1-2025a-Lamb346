@@ -12,7 +12,7 @@
 
 ![Substitua a imagem ao lado por um screenshot do seu projeto](img/ImageSite_Amazon.png)
 
-Acesso: Substitua este texto pela URL para acesso ao site publicado
+Acesso: https://67ebedc43dfe6e2ddd17eb07--jade-eclair-c15d47.netlify.app/
 
 #### Desenvolvedor(a)
 
@@ -28,13 +28,9 @@ Vitória Luiza Camara - Sistemas de Informação
 
 https://www.amazon.com.br
 
-#### Deploy
-
-https://67ebedc43dfe6e2ddd17eb07--jade-eclair-c15d47.netlify.app/
-
 ##### Descrição
 
-Substitua este texto por uma descrição do site/app escolhido. Inclua observações sobre seu conteúdo, aparência e código.
+O site da Amazon é dinâmico, com o layout do corpo variando para os usuários conforme sua localidade, histórico de uso e data. Neste caso, foi selecionado um layout específico para ser recriado, incluindo um banner como plano de fundo no topo do site, diversos blocos de ofertas com animações variadas, um carrossel de categorias de produtos e uma lista de produtos acompanhada de uma coluna vertical para filtragem. O cabeçalho da página contém uma grande quantidade de informações que poderiam ser melhor organizadas ou ocultadas, enquanto o rodapé apresenta uma estrutura mais minimalista e bem organizada.
 
 #### Demanda do(a) cliente
 
@@ -44,30 +40,27 @@ Substitua este texto por uma descrição do site/app escolhido. Inclua observaç
 
 #### Desenvolvimento
 
-Substitua este texto por uma descrição do processo de desenvolvimento, explicando suas escolhas para o remake e etapas do trabalho (por exemplo, como foi coletado o conteúdo, como você lidou com as demandas, etc.)
+Devido ao fato do script do site ser bem dinamico e complexo, o caminho escolhido foi o de refazer o site. Para iniciar o trabalho foram usados templates do site Creative-Tim e u em parte um código gerado por IA (ChatGPT) para montar uma estrutura inicial. A partir deste primeira versão o site foi sendo gradualmente sendo modelada a partir da leitura da documentação no site da tailwind, a adição de imagens e por último a adição dos carrosséis com o Swiper API. 
 
 #### Tecnologias
-
-Substitua este trecho por uma lista detalhada de tecnologias usadas (tanto as básicas, como HTML e CSS, como as mais específicas, por exemplo Tailwind, etc.):
 
 - HTML
 - CSS
 - Tailwind
+- Swiper
 
 #### Ambiente de desenvolvimento
 
-Substitua este trecho por uma lista detalhada dos ambientes/ferramentas de desenvolvimento que você usou (por exemplo, VS Code + alguma extensão, etc.)
-
 - VS Code
 - HTML Preview (Extensão)
-- ...
+- Netlify
 
 #### Referências e créditos
 
-Substitua este trecho por uma lista bem detalhada de todo material que você consultou para ajudar no projeto, por exemplo: URL de templates usados, URL de icon kits usados, créditos para colegas que colaboraram, geradores de código (incluindo alguns prompts usados para o ChatGPT, se for o caso)
-
-- ...
-- ...
+- https://www.creative-tim.com/twcomponents/components/headers?page=4
+- https://swiperjs.com/swiper-api
+- https://tailwindcss.com/docs/installation/using-vite
+- https://chatgpt.com/
 
 ---
 
