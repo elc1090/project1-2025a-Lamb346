@@ -28,6 +28,10 @@ Vitória Luiza Camara - Sistemas de Informação
 
 https://www.amazon.com.br
 
+###Deploy
+
+https://67ebedc43dfe6e2ddd17eb07--jade-eclair-c15d47.netlify.app/
+
 ##### Descrição
 
 Substitua este texto por uma descrição do site/app escolhido. Inclua observações sobre seu conteúdo, aparência e código.
